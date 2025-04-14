@@ -1,0 +1,120 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope itemtype="http://schema.org/Person">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Jeopardy</title>
+<meta name="description" content="An interactive Jeopardy game for your web browser." />
+<link rel="stylesheet" type="text/css" href="jeopardy.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+<body>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="jeopardy.js"></script>
+<script type="text/javascript">
+var jeopardy;
+$(document).ready(function() {
+    var finalJeopardy = {
+        "category": "Final Jeopardy Category",
+        "question": "This is the Final Jeopardy question.",
+        "answer": "This is the Final Jeopardy answer."
+    };
+    var questions = [
+        {
+            "category": "Technical Processes",
+            "questions": [
+                {
+                    "value": "100",
+                    "question" : "This process provides a rigorous basis of data and information for technical understanding to aid decision‐making and technical assessments across the life cycle. ",
+                    "answer": "The Systems Analysis Process"
+                },
+                {
+                    "value": "200",
+                    "question": "The purpose of the this process is to realize a specified system element.",
+                    "answer": "The Implementation Process"
+                },
+                {
+                    "value": "300",
+                    "question": "The purpose of this processis to provide objective evidence that a system, system element, or artifact fulfils its specified requirements and characteristics.",
+                    "answer": "The Verification Process"
+                },
+                {
+                    "value": "400",
+                    "question": "The purpose of this process is to synthesize a set of system elements into a realized system that satisfies the system requirements.",
+                    "answer": "The Integration Process"
+                },
+                {
+                    "value": "500",
+                    "question": "The purpose of this process is to generate system architecture alternatives, select one or more alternative(s) that address stakeholder concerns and system requirements, and express this in consistent views and models.",
+                    "answer": "the System Architecture Definition process"
+                }
+            ]
+        },
+        {
+            "category": "More Technical Processes",
+            "questions": [
+                {
+                    "value": "100",
+                    "question": "The purpose of this process is to use the system to deliver its services.",
+                    "answer": "the Operation process"
+                },
+                {
+                    "value": "200",
+                    "question": "The purpose of this process is to establish a capability for a system to provide services specified by stakeholder requirements in the operational environment.",
+                    "answer": "the Transition Process"
+                },
+                {
+                    "value": "300",
+                    "question": "The purpose of this process is to provide objective evidence that the system, when in use, fulfills its business or mission objectives and stakeholder needs and requirements, achieving its intended use in its intended operational environment",
+                    "answer": "the Validation process"
+                },
+                {
+                    "value": "400",
+                    "question": "The purpose of this process is to end the existence of a system element or system for a specified intended use, appropriately handle replaced or retired elements, appropriately handle any waste products, and to properly attend to identified critical needs.",
+                    "answer": "The Disposal Process"
+                },
+                {
+                    "value": "500",
+                    "question": "The purpose of this process is to sustain the capability of the system to provide a service.",
+                    "answer": "The Maintenance Process"
+                }
+            ]
+        },
+        {
+            "category": "STILL More Processes",
+            "questions": [
+                {
+                    "value": "100",
+                    "question": "The purpose of this process is to transform the stakeholder, user-oriented view of desired capabilities into a technical view of a solution that meets the operational needs of the user.",
+                    "answer": " the System Requirements Definition process"
+                },
+                {
+                    "value": "200",
+                    "question": "The purpose of this process is to define the stakeholder needs and requirements for a system that can provide the capabilities needed by users and other stakeholders in a defined environment.",
+                    "answer": "the Stakeholder Needs and Requirements Definition process"
+                },
+                {
+                    "value": "300",
+                    "question": "The purpose of this process is to define the overall strategic problem or opportunity, characterize the solution space, and determine potential solution class(es) that can address a problem or take advantage of an opportunity.",
+                    "answer": "the Business or Mission Analysis process"
+                },
+		        {
+		            "value": "400",
+		            "question": "The purpose of this process is to help ensure the effective application of the organization’s Quality Management process to the project.",
+		            "answer": "the Quality Assurance process"
+		        },
+		        {
+		            "value": "500",
+		            "question": "The purpose of this process is to collect, analyze, and report objective data and information to support effective management and address information needs about the products, services, and processes.",
+		            "answer": "the Measurement Process"
+		        }
+            ]
+        }
+    ];
+    jeopardy = new Jeopardy({
+        questions: questions,
+        finalJeopardy: finalJeopardy
+    });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+digraph "test ipo" {
+	inputs [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+      <tr> <td> <table border="0" cellborder="0"><tr><td>Inputs</td></tr></table> </td> </tr>
+			<tr> <td>
+				<table border="0" cellborder="0" cellspacing="0" >
+					
+					<tr> <td align="left" >Life cycle concepts</td> </tr>
+					
+					<tr> <td align="left" >System Architecture Description</td> </tr>
+					
+					<tr> <td align="left" >System Architecture Rationale</td> </tr>
+					
+					<tr> <td align="left" >System Design Description</td> </tr>
+					
+					<tr> <td align="left" >System Design Rationale</td> </tr>
+					
+					<tr> <td align="left" >System Intertace Definition</td> </tr>
+					
+					<tr> <td align="left" >System Element</td> </tr>
+					
+					<tr> <td align="left" >System Element Description</td> </tr>
+					
+					<tr> <td align="left" >Accepted System or System Element</td> </tr>
+					
+					<tr> <td align="left" >Reused System or System Element</td> </tr>
+					
+				</table>
+			</td> </tr>
+		</table>> shape=plain]
+	activities [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+      <tr> <td> <table border="0" cellborder="0"><tr><td>Activities</td></tr></table> </td> </tr>
+			<tr> <td>
+				<table border="0" cellborder="0" cellspacing="0" >
+					
+					<tr> <td align="left" >Prepare for Integration</td> </tr>
+					
+					<tr> <td align="left" >Perform Integration</td> </tr>
+					
+					<tr> <td align="left" >Manage Results of Integration</td> </tr>
+					
+				</table>
+			</td> </tr>
+		</table>> shape=plain]
+	outputs [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+      <tr> <td> <table border="0" cellborder="0"><tr><td>Outputs</td></tr></table> </td> </tr>
+			<tr> <td>
+				<table border="0" cellborder="0" cellspacing="0" >
+					
+					<tr> <td align="left" >Integration Strategy/Approach</td> </tr>
+					
+					<tr> <td align="left" >Integration Procedure</td> </tr>
+					
+					<tr> <td align="left" >Integrated System or System Element</td> </tr>
+					
+					<tr> <td align="left" >System Integration Descriptions</td> </tr>
+					
+					<tr> <td align="left" >Constraints on Solution</td> </tr>
+					
+					<tr> <td align="left" >Requirements Imposed on Enabling Systems</td> </tr>
+					
+					<tr> <td align="left" >Traceability Mapping</td> </tr>
+					
+					<tr> <td align="left" >Integration Report</td> </tr>
+					
+					<tr> <td align="left" >Integration Records/Artifacts</td> </tr>
+					
+				</table>
+			</td> </tr>
+		</table>> shape=plain]
+	controls [label=Controls shape=rect]
+	enablers [label=Enablers shape=rect]
+	inputs -> activities [arrowhead=vee arrowtail=none dir=both]
+	activities -> outputs [arrowhead=vee arrowtail=none dir=both]
+	controls -> activities [arrowhead=vee arrowtail=none dir=both]
+	enablers -> activities [arrowhead=vee arrowtail=none dir=both]
+}

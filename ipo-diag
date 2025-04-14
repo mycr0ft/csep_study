@@ -1,0 +1,58 @@
+digraph "test ipo" {
+	inputs [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+      <tr> <td> <table border="0" cellborder="0"><tr><td>Inputs</td></tr></table> </td> </tr>
+			<tr> <td>
+				<table border="0" cellborder="0" cellspacing="0" >
+					
+					<tr> <td align="left" >Life cycle concepts</td> </tr>
+					
+					<tr> <td align="left" >Constraints on Solution</td> </tr>
+					
+					<tr> <td align="left" >System Analysis Request</td> </tr>
+					
+					<tr> <td align="left" >Analysis Situations</td> </tr>
+					
+				</table>
+			</td> </tr>
+		</table>> shape=plain]
+	activities [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+      <tr> <td> <table border="0" cellborder="0"><tr><td>Activities</td></tr></table> </td> </tr>
+			<tr> <td>
+				<table border="0" cellborder="0" cellspacing="0" >
+					
+					<tr> <td align="left" >Prepare for System Analysis</td> </tr>
+					
+					<tr> <td align="left" >Perform System Analysis</td> </tr>
+					
+					<tr> <td align="left" >Manage System Analysis</td> </tr>
+					
+				</table>
+			</td> </tr>
+		</table>> shape=plain]
+	outputs [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+      <tr> <td> <table border="0" cellborder="0"><tr><td>Outputs</td></tr></table> </td> </tr>
+			<tr> <td>
+				<table border="0" cellborder="0" cellspacing="0" >
+					
+					<tr> <td align="left" >System Analysis Strategy/Approach</td> </tr>
+					
+					<tr> <td align="left" >Constraints on Solution</td> </tr>
+					
+					<tr> <td align="left" >Requirements Imposed on Enabling Systems</td> </tr>
+					
+					<tr> <td align="left" >Traceability Mapping</td> </tr>
+					
+					<tr> <td align="left" >System Analysis Report</td> </tr>
+					
+					<tr> <td align="left" >System Analysis Records/Artifacts</td> </tr>
+					
+				</table>
+			</td> </tr>
+		</table>> shape=plain]
+	controls [label=Controls shape=rect]
+	enablers [label=Enablers shape=rect]
+	inputs -> activities [arrowhead=vee arrowtail=none dir=both]
+	activities -> outputs [arrowhead=vee arrowtail=none dir=both]
+	controls -> activities [arrowhead=vee arrowtail=none dir=both]
+	enablers -> activities [arrowhead=vee arrowtail=none dir=both]
+}

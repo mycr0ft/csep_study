@@ -1,0 +1,74 @@
+digraph "test ipo" {
+	inputs [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+      <tr> <td> <table border="0" cellborder="0"><tr><td>Inputs</td></tr></table> </td> </tr>
+			<tr> <td>
+				<table border="0" cellborder="0" cellspacing="0" >
+					
+					<tr> <td align="left" >Life cycle concepts</td> </tr>
+					
+					<tr> <td align="left" >System Viewpoints, Views, and Models</td> </tr>
+					
+					<tr> <td align="left" >System Architecture Description</td> </tr>
+					
+					<tr> <td align="left" >System Architecture Rationale</td> </tr>
+					
+					<tr> <td align="left" >System Design Description</td> </tr>
+					
+					<tr> <td align="left" >System Design Rationale</td> </tr>
+					
+					<tr> <td align="left" >System Interface Definition</td> </tr>
+					
+					<tr> <td align="left" >System Design Characteristics</td> </tr>
+					
+					<tr> <td align="left" >System Element Description</td> </tr>
+					
+				</table>
+			</td> </tr>
+		</table>> shape=plain]
+	activities [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+      <tr> <td> <table border="0" cellborder="0"><tr><td>Activities</td></tr></table> </td> </tr>
+			<tr> <td>
+				<table border="0" cellborder="0" cellspacing="0" >
+					
+					<tr> <td align="left" >Prepare for Implementation</td> </tr>
+					
+					<tr> <td align="left" >Perform Implementation</td> </tr>
+					
+					<tr> <td align="left" >Manage Results of Implementation</td> </tr>
+					
+				</table>
+			</td> </tr>
+		</table>> shape=plain]
+	outputs [label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+      <tr> <td> <table border="0" cellborder="0"><tr><td>Outputs</td></tr></table> </td> </tr>
+			<tr> <td>
+				<table border="0" cellborder="0" cellspacing="0" >
+					
+					<tr> <td align="left" >Implementation Strategy/Approach</td> </tr>
+					
+					<tr> <td align="left" >System Elements</td> </tr>
+					
+					<tr> <td align="left" >System Element Descriptions</td> </tr>
+					
+					<tr> <td align="left" >Training Materials</td> </tr>
+					
+					<tr> <td align="left" >Constraints on Solution</td> </tr>
+					
+					<tr> <td align="left" >Requirements Imposed on Enabling Systems</td> </tr>
+					
+					<tr> <td align="left" >Traceability Mapping</td> </tr>
+					
+					<tr> <td align="left" >Implementation Report</td> </tr>
+					
+					<tr> <td align="left" >Implementation Records/Artifacts</td> </tr>
+					
+				</table>
+			</td> </tr>
+		</table>> shape=plain]
+	controls [label=Controls shape=rect]
+	enablers [label=Enablers shape=rect]
+	inputs -> activities [arrowhead=vee arrowtail=none dir=both]
+	activities -> outputs [arrowhead=vee arrowtail=none dir=both]
+	controls -> activities [arrowhead=vee arrowtail=none dir=both]
+	enablers -> activities [arrowhead=vee arrowtail=none dir=both]
+}
